@@ -3,9 +3,11 @@
 }
 
 body {
+  background-image: url('https://i.pinimg.com/564x/6d/d6/55/6dd655dc0d6cc731d8be8a7bd04f8e3b.jpg');
+  background-repeat: cover;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace
-  color: rgb(102, 0, 255);
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(0, 0, 0);
   background-color: rgb(0, 255,255);
 }
 
@@ -16,8 +18,8 @@ nav {
   justify-content: center;
   padding: 0.5rem;
   gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  border-bottom: solid 1px #ffffff;
+  background-color: rgb(175, 50, 50)eee;
 }
 
 nav a {
@@ -33,7 +35,7 @@ nav a {
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: rgb(0, 255, 255);
+  background-color: rgb(243, 250, 250);
 }
 
 
@@ -44,11 +46,17 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+  text-shadow: 2px 2px rgb(0, 0, 102);
+  transition: 1s
+}
+
+h1:hover {
+  transform: rotatez(359deg)
 }
 
 button {
   margin: 10px;
-  background-color: rgb(102, 0, 255);
+  background-color: rgb(194, 194, 214);
   color: rgb(0, 0, 0);
   border-radius: 12px 12px 12px 12px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
@@ -56,6 +64,74 @@ button {
 }
 
 button:hover {
-  background-color: rgb(0, 255, 255);
+  background-color: rgb(0, 0, 102);
   box-shadow: 0px 10px 10px rgb(20, 20, 20)
+  transform: scaleY(3);
+}
+
+.flex{
+  display: fles;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* .carousel .carousel-inner .carousel-item img {
+  width: 250px;
+  height: auto;
+} */
+
+.carousel-inner img {
+  width: 85%;
+  margin: auto;
+}
+
+.w-100 {
+  width: 50% !important;
+  height: 75vh;
+}
+
+.mainimage {
+  opacity: 0.5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+}
+
+.mainimage:hover {
+  opacity: 1.0;
+}
+ 
+
+.clothesimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%
+  float: right; 
+}
+
+.shoesimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 80%
+}
+
+.hairimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px black;
+  padding: 50px;
+  width: 80%
+}
+
+.survay {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+  background-image: linear-gradient(to bottom right, white, gray);
 }
