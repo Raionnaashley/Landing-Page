@@ -17,6 +17,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+  padding-bottom: 30px;
   gap: 0.5rem;
   border-bottom: solid 1px #ffffff;
   background-color: rgb(175, 50, 50)eee;
@@ -47,11 +48,11 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
   text-shadow: 2px 2px rgb(0, 0, 102);
-  transition: 1s
+  transition: 1s;
 }
 
 h1:hover {
-  transform: rotatez(359deg)
+  transform: rotatez(359deg);
 }
 
 button {
@@ -60,17 +61,17 @@ button {
   color: rgb(0, 0, 0);
   border-radius: 12px 12px 12px 12px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 button:hover {
   background-color: rgb(0, 0, 102);
-  box-shadow: 0px 10px 10px rgb(20, 20, 20)
+  box-shadow: 0px 10px 10px rgb(20, 20, 20);
   transform: scaleY(3);
 }
 
 .flex{
-  display: fles;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -96,7 +97,8 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%
+  height: 500px;
+  width: auto;
 }
 
 .mainimage:hover {
@@ -108,7 +110,8 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%
+  width: 50%;
+  height: auto;
   float: right; 
 }
 
@@ -126,12 +129,17 @@ button:hover {
   margin-right: auto;
   border: 15px black;
   padding: 50px;
-  width: 80%
+  width: 80%;
 }
 
 .survay {
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
   background-image: linear-gradient(to bottom right, white, gray);
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
 }
