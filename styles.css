@@ -143,3 +143,38 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
+
+/* Default styles */
+/* Adjustments for smaller screens */
+@media (max-width: 640px) {
+  /* Reset margin for buttons in navigation */
+  nav button {
+    margin: 5px 0;
+  }
+
+  /* Adjust font size for headings */
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  /* Adjust image size */
+  .mainimage, .clothesimg, .shoeimg, .hairimg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust padding and font size for paragraphs */
+  p {
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  /* Adjust carousel image size */
+  .carousel-item img {
+    height: auto;
+  }
+  .flex a {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+}
